@@ -1,0 +1,27 @@
+<div class="video-buttons">
+   <img class="initial-play"  [src]='ge.enterGif' (click)="playVid()" *ngIf="ge.secondaryVideoObj.isActive" />
+   <img class="background-gif" [src]='ge.backgroundGifObj.src'  *ngIf="ge.backgroundGifObj.isActive"/>
+   <img id="father" class="fom-gif right-gif" [src]="ge.fomGifObj.father" *ngIf="ge.fomGifObj.isActive" (click)="fomClicked('father')"/> 
+   <img id="mother" class="fom-gif left-gif" [src]="ge.fomGifObj.mother" *ngIf="ge.fomGifObj.isActive" (click)="fomClicked('mother')"/> 
+   <img class="fom-gif question-gif" [src]='ge.fomGifObj.question'  *ngIf="ge.fomGifObj.isActive && !ge.myselfGifObj.isActive"/> 
+   <img class="fom-gif myself-gif myself" [src]="ge.myselfGifObj.src" *ngIf="ge.myselfGifObj.isActive" (click)="myselfClicked()"/>
+   <img class="fom-gif myself-gif myself-question-gif" src="../assets/pick_side_last.gif" *ngIf="ge.myselfGifObj.isActive"/>
+   
+   <img class="fom-gif left-gif homework" [src]="ge.homGifObj.homework" *ngIf="ge.homGifObj.isActive" (click)="homClicked('homework')"/> 
+   <img class="fom-gif right-gif music" [src]="ge.homGifObj.music" *ngIf="ge.homGifObj.isActive" (click)="homClicked('music')"/> 
+   <img class="fom-gif question-gif hom-question" [src]='ge.homGifObj.question'  *ngIf="ge.homGifObj.isActive"/> 
+
+   <img class="fom-gif right-gif lie" [src]="ge.lofGifObj.lie" *ngIf="ge.lofGifObj.isActive" (click)="lofClicked('lie')"/> 
+   <img class="fom-gif left-gif filter" [src]="ge.lofGifObj.filter" *ngIf="ge.lofGifObj.isActive" (click)="lofClicked('filter')"/> 
+   <img class="fom-gif question-gif lof-question" [src]='ge.lofGifObj.question'  *ngIf="ge.lofGifObj.isActive"/> 
+
+   <img class="credit" [src]='ge.endSceneGif.src' *ngIf="ge.endSceneGif.isActive"/>
+   <img class="replay" [src]='ge.replayGifObj.src' *ngIf="ge.replayGifObj.isActive" (click)="replayClick()"/>
+
+
+
+
+
+
+
+</div>
