@@ -30,6 +30,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
+    if(compiled.querySelector('.content span'))
     expect(compiled.querySelector('.content span').textContent).toContain('hadar app is running!');
   });
 });
