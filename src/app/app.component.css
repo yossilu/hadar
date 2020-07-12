@@ -12,7 +12,6 @@
     /* display: inline-block; */
     width: 100%;
     height: 100%;
-    background-color: black;
     overflow: hidden;
 }
 
@@ -22,19 +21,19 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: 3;
+    /* z-index: 3; */
 }
 
 .gif-manager{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 15;
+    /* z-index: 15; */
 }
 
 .temp-video{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 5;
+    /* z-index: 5; */
 }
