@@ -22,9 +22,9 @@ export class AppComponent {
     this.ge.mainVideoElem.pause();
     
     this.checkMainTime();
-    
-    
   }  
+
+  
 
   ngDoCheck(){
     if(this.ge.endSceneGif.isActive && !this.endCredit){

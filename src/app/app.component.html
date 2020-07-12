@@ -1,14 +1,14 @@
 
-<div class="main-frame">
+<div class="main-frame" >
   <div class="main-video-frame" >
-    <video id="main-video"  autoplay="true" muted="true" >
+    <video id="main-video"  autoplay="true" muted>
       <source id="video-src" [src]='ge.mainVideoObj.src' type="video/mp4">
     </video>
   </div>
   <div class="gif-manager">
     <app-manager></app-manager>
   </div>
-  <div class="temp-video" *ngIf="!ge.mainVideoObj.isActive">
+  <div class="temp-video" *ngIf="!ge.mainVideoObj.isActive"> 
     <app-secondary></app-secondary>
   </div>
 </div>

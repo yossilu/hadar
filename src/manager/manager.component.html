@@ -1,4 +1,4 @@
-<div class="video-buttons">
+<div class="video-buttons" (mouseenter)="userInteracted()">
    <img class="initial-play"  [src]='ge.enterGif' (click)="playVid()" *ngIf="ge.secondaryVideoObj.isActive" />
    <img class="background-gif" [src]='ge.backgroundGifObj.src'  *ngIf="ge.backgroundGifObj.isActive"/>
    <img id="father" class="fom-gif right-gif" [src]="ge.fomGifObj.father" *ngIf="ge.fomGifObj.isActive" (click)="fomClicked('father')"/> 

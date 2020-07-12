@@ -17,6 +17,10 @@ export class ManagerComponent implements OnInit {
    
   }
 
+  userInteracted = () => {
+    document.getElementById('secondary-loop')
+  }
+
   playVid = () => {
     console.log("playing vid")
     this.ge.enterGif = './assets/enter_checked.gif'

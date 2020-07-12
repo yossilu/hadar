@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class SecondaryComponent implements OnInit {
 
   constructor(public ge: GlobalElementsService) { }
-  mainVideoElem;
+  secondaryVideoElem;
   currentTime = 0;
   initialInterval;
   endOfFirstLoopSec = 20;
@@ -18,16 +18,16 @@ export class SecondaryComponent implements OnInit {
   }
 
   createFirstLoop = () => {
-    this.mainVideoElem = document.getElementById('secondary-loop');
-    if(this.mainVideoElem){
+    this.secondaryVideoElem = document.getElementById('secondary-loop');
+    if(this.secondaryVideoElem){
       setTimeout(() => {
-        if(this.mainVideoElem)
-        this.mainVideoElem.play();
-      }, 2000);
+          this.secondaryVideoElem.play();   
+      }, 1000);
+      
       this.ge.initialInterval = setInterval(() => {
-        this.currentTime = Math.round(this.mainVideoElem.currentTime);
+        this.currentTime = Math.round(this.secondaryVideoElem.currentTime);
         if(this.currentTime == this.endOfFirstLoopSec){
-          this.mainVideoElem.currentTime = 3;
+          this.secondaryVideoElem.currentTime = 3;
         }
       }, 1000)
     }
