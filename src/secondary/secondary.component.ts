@@ -21,8 +21,9 @@ export class SecondaryComponent implements OnInit {
     this.mainVideoElem = document.getElementById('secondary-loop');
     if(this.mainVideoElem){
       setTimeout(() => {
+        if(this.mainVideoElem)
         this.mainVideoElem.play();
-      }, 1000);
+      }, 2000);
       this.ge.initialInterval = setInterval(() => {
         this.currentTime = Math.round(this.mainVideoElem.currentTime);
         if(this.currentTime == this.endOfFirstLoopSec){
