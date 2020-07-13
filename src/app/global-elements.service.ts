@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl, SafeUrl} from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GlobalElementsService {
 
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) { }
 
   mainVideoElem;
   secondaryVideoElem;
@@ -23,4 +24,12 @@ export class GlobalElementsService {
   endSceneGif = {src: './assets/credit.gif', isActive: false}
   replayGifObj = {src: './assets/replay.gif', isActive: false};
 
+
+  getMainVideo = () => {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.mainVideoObj.src);
+  }
+
+  getSecondaryVideo = () => {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.secondaryVideoObj.src);
+  }
 }
