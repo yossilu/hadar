@@ -17,9 +17,7 @@ export class ManagerComponent implements OnInit {
    
   }
 
-  userInteracted = () => {
-    document.getElementById('secondary-loop')
-  }
+
 
   playVid = () => {
     console.log("playing vid")
@@ -154,17 +152,6 @@ export class ManagerComponent implements OnInit {
   replayClick = () => {
     clearInterval(this.ge.mainVidInterval);
     location.reload();
-    // this.ge.secondaryVideoObj = {src: "./assets/first-loop.mp4", isActive: true, currentTime: 0};
-    // this.ge.mainVideoObj = {src: "./assets/no_slides.mp4", isActive: false, currentTime: 180};
-    // this.ge.enterGif = './assets/enter_unchecked.gif'
-  
-    // this.ge.fomGifObj = {father: './assets/father_unchecked.gif', mother: './assets/mother_unchecked.gif', question: './assets/parent_side.gif', isActive: false, fomCounter: 0};
-    // this.ge.homGifObj = {homework: './assets/homework_unchecked.gif', music: './assets/music_unchecked.gif', question: './assets/pick_diversion.gif', isActive: false};
-    // this.ge.lofGifObj = {lie: './assets/lie_unchecked.gif', filter: './assets/filter_unchecked.gif', question: './assets/pick_reaction.gif', isActive: false};
-    // this.ge.backgroundGifObj = {src: './assets/background-gif.gif', isActive: false};
-    // this.ge.myselfGifObj = {src: './assets/myself_unchecked.gif', isActive: false};
-    // this.ge.endSceneGif = {src: './assets/credit.gif', isActive: false}
-    // this.ge.replayGifObj = {src: './assets/replay.gif', isActive: false};
   }
 
 
