@@ -102,7 +102,7 @@ export class AppComponent {
 
       if(Math.round(this.ge.mainVideoElem.currentTime) >= 85 && Math.round(this.ge.mainVideoElem.currentTime) <= 86 && !this.thirdVisited){
         this.thirdVisited = true;
-        this.ge.mainVideoElem.pause();
+        this.ge.mainVideoElem.pauseVideo();
         this.ge.backgroundGifObj.isActive = true;
         this.ge.homGifObj.isActive = true;
 
@@ -112,12 +112,12 @@ export class AppComponent {
 
       if(Math.round(this.ge.mainVideoElem.currentTime) >= 85 && Math.round(this.ge.mainVideoElem.currentTime) <= 86 && (!this.ge.homGifObj.music.includes('unchecked') && !this.ge.homGifObj.homework.includes('unchecked'))){
         this.ge.mainVideoElem.currentTime = 107
-        this.ge.mainVideoElem.play();
+        this.ge.mainVideoElem.playVideo();
       }
 
       if((Math.round(this.ge.mainVideoElem.currentTime) >= 104 && Math.round(this.ge.mainVideoElem.currentTime) < 106)
           && (this.ge.homGifObj.music.includes('unchecked') || this.ge.homGifObj.homework.includes('unchecked'))){
-        this.ge.mainVideoElem.pause();
+        this.ge.mainVideoElem.pauseVideo();
         this.ge.backgroundGifObj.isActive = true;
         this.ge.homGifObj.isActive = true;
         this.ge.mainVideoObj.isActive = false;
@@ -127,7 +127,7 @@ export class AppComponent {
       if((Math.round(this.ge.mainVideoElem.currentTime) >= 104 && Math.round(this.ge.mainVideoElem.currentTime) < 106 ) 
         && (!this.ge.homGifObj.music.includes('unchecked') && !this.ge.homGifObj.homework.includes('unchecked'))){
         this.ge.mainVideoElem.currentTime = 107
-        this.ge.mainVideoElem.play();
+        this.ge.mainVideoElem.playVideo();
       }
 
       if(Math.round(this.ge.mainVideoElem.currentTime) >= 106 && Math.round(this.ge.mainVideoElem.currentTime) < 108){
@@ -140,7 +140,7 @@ export class AppComponent {
 
 
       if(Math.round(this.ge.mainVideoElem.currentTime) == 115){
-        this.ge.mainVideoElem.pause();
+        this.ge.mainVideoElem.pauseVideo();
         this.ge.backgroundGifObj.isActive = true;
         this.ge.lofGifObj.isActive = true;
 
@@ -153,7 +153,7 @@ export class AppComponent {
         this.ge.fomGifObj.father = './assets/father_checked.gif';
         
         this.ge.myselfGifObj.isActive = true;
-        this.ge.mainVideoElem.pause();
+        this.ge.mainVideoElem.pauseVideo();
         this.ge.backgroundGifObj.isActive = true;
         this.ge.fomGifObj.isActive = true;
 
@@ -163,7 +163,7 @@ export class AppComponent {
 
       if(Math.round(this.ge.mainVideoElem.currentTime) == 196){
         this.ge.mainVideoElem.currentTime = 197;
-        this.ge.mainVideoElem.pause();
+        this.ge.mainVideoElem.pauseVideo();
         this.ge.endSceneGif.isActive = true;
 
         

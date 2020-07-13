@@ -19,6 +19,8 @@ export class SecondaryComponent implements OnInit {
 
   createFirstLoop = () => {
     this.secondaryVideoElem = document.getElementById('secondary-loop');
+    // this.ge.secondaryVideoObj.src = this.ge.secondaryVideoObj.src + "&output=embed";
+    // window.location.replace(this.ge.secondaryVideoObj.src)
     if(this.secondaryVideoElem){
       setTimeout(() => {
           this.secondaryVideoElem.play();   

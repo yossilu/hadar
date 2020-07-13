@@ -30,7 +30,7 @@ export class ManagerComponent implements OnInit {
       this.ge.secondaryVideoElem.currentTime = 20;
       this.ge.mainVideoElem.currentTime = this.ge.mainVideoObj.currentTime;
       setTimeout(() => {
-        
+          console.log(this.ge.mainVideoElem)
           this.ge.mainVideoElem.play();
           // this.ge.mainVideoElem.style.zIndex = 6;
           

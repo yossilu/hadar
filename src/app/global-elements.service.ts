@@ -25,11 +25,12 @@ export class GlobalElementsService {
   replayGifObj = {src: './assets/replay.gif', isActive: false};
 
 
-  getMainVideo = () => {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(this.mainVideoObj.src);
-  }
+  // getMainVideo = () => {
+  //   return this.sanitizer.bypassSecurityTrustResourceUrl(this.mainVideoob)
+  //   this.mainVideoElem;
+  // }
 
-  getSecondaryVideo = () => {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(this.secondaryVideoObj.src);
-  }
+  // getSecondaryVideo = () => {
+  //   return this.secondaryVideoElem;
+  // }
 }
