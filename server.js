@@ -8,7 +8,7 @@ app.use(express.static('./dist'));
 app.use(cors());
 
 app.get('/', function(req, res) {
-    res.sendFile('index.html', {root: './dist/hadar'});
+    res.sendFile('index.html', {root: './dist'});
 });
 
 app.use((req, res, next) => {
