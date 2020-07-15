@@ -22,6 +22,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "ffmpeg": "0.0.4",
+    "fs": "0.0.1-security",
     "hls": "0.0.1",
     "http": "0.0.1-security",
     "rxjs": "~6.5.4",
