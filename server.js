@@ -7,10 +7,9 @@ const cors = require('cors');
 app.use(express.static('./dist'));
 app.use(cors());
 
-app.get('/', function(req, res) {
-    res.sendFile('index.html', {root: './dist'}
-  );
-});
+// app.get('/', function(req, res) {
+//     // res.sendFile('index.html', {root: './dist/hadar'});
+// });
 
 app.use((req, res, next) => {
     console.log("ALLOW CORS")
