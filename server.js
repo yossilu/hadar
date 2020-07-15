@@ -4,11 +4,11 @@ const cors = require('cors');
 
 
 
-app.use(express.static('./dist'));
+app.use(express.static('./src'));
 app.use(cors());
 
 app.get('/', function(req, res) {
-    res.sendFile('index.html', {root: '/'});
+    res.sendFile('index.html', {root: '/src'});
 });
 
 app.use((req, res, next) => {
