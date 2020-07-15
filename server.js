@@ -4,11 +4,11 @@ const cors = require('cors');
 
 
 
-app.use(express.static('./dist/hadar'));
+app.use(express.static('./dist'));
 app.use(cors());
 
 app.get('/', function(req, res) {
-    res.sendFile('index.html', {root: './dist/hadar'}
+    res.sendFile('index.html', {root: './dist'}
   );
 });
 
