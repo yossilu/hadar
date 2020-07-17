@@ -232,7 +232,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             if (Math.round(_this.ge.mainVideoElem.currentTime) >= 85 && Math.round(_this.ge.mainVideoElem.currentTime) <= 86 && !_this.thirdVisited) {
               _this.thirdVisited = true;
 
-              _this.ge.mainVideoElem.pauseVideo();
+              _this.ge.mainVideoElem.pause();
 
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.homGifObj.isActive = true;
@@ -243,11 +243,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             if (Math.round(_this.ge.mainVideoElem.currentTime) >= 85 && Math.round(_this.ge.mainVideoElem.currentTime) <= 86 && !_this.ge.homGifObj.music.includes('unchecked') && !_this.ge.homGifObj.homework.includes('unchecked')) {
               _this.ge.mainVideoElem.currentTime = 107;
 
-              _this.ge.mainVideoElem.playVideo();
+              _this.ge.mainVideoElem.play();
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) >= 104 && Math.round(_this.ge.mainVideoElem.currentTime) < 106 && (_this.ge.homGifObj.music.includes('unchecked') || _this.ge.homGifObj.homework.includes('unchecked'))) {
-              _this.ge.mainVideoElem.pauseVideo();
+              _this.ge.mainVideoElem.pause();
 
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.homGifObj.isActive = true;
@@ -258,7 +258,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             if (Math.round(_this.ge.mainVideoElem.currentTime) >= 104 && Math.round(_this.ge.mainVideoElem.currentTime) < 106 && !_this.ge.homGifObj.music.includes('unchecked') && !_this.ge.homGifObj.homework.includes('unchecked')) {
               _this.ge.mainVideoElem.currentTime = 107;
 
-              _this.ge.mainVideoElem.playVideo();
+              _this.ge.mainVideoElem.play();
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) >= 106 && Math.round(_this.ge.mainVideoElem.currentTime) < 108) {
@@ -269,7 +269,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) == 115) {
-              _this.ge.mainVideoElem.pauseVideo();
+              _this.ge.mainVideoElem.pause();
 
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.lofGifObj.isActive = true;
@@ -282,7 +282,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this.ge.fomGifObj.father = './assets/father_checked.gif';
               _this.ge.myselfGifObj.isActive = true;
 
-              _this.ge.mainVideoElem.pauseVideo();
+              _this.ge.mainVideoElem.pause();
 
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.fomGifObj.isActive = true;
@@ -293,7 +293,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             if (Math.round(_this.ge.mainVideoElem.currentTime) == 196) {
               _this.ge.mainVideoElem.currentTime = 197;
 
-              _this.ge.mainVideoElem.pauseVideo();
+              _this.ge.mainVideoElem.pause();
 
               _this.ge.endSceneGif.isActive = true;
             }
@@ -337,7 +337,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-root"]],
       decls: 7,
       vars: 2,
-      consts: [[1, "main-frame"], [1, "main-video-frame"], ["id", "main-video", "autoplay", "true", "muted", "", "preload", "auto"], ["type", "video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\"", 3, "src"], [1, "gif-manager"], ["class", "temp-video", 4, "ngIf"], [1, "temp-video"]],
+      consts: [[1, "main-frame"], [1, "main-video-frame"], ["id", "main-video", "autoplay", "true", "muted", ""], ["type", "video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\"", 3, "src"], [1, "gif-manager"], ["class", "temp-video", 4, "ngIf"], [1, "temp-video"]],
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -374,7 +374,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_manager_manager_component__WEBPACK_IMPORTED_MODULE_2__["ManagerComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _secondary_secondary_component__WEBPACK_IMPORTED_MODULE_4__["SecondaryComponent"]],
-      styles: [".start-button[_ngcontent-%COMP%]{\r\n    display: block;\r\n    width: 200px;\r\n    height: 90px;\r\n    position: absolute;\r\n    top: 35%;\r\n    left: 45%;\r\n}\r\n\r\n.main-frame[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    \r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n}\r\n\r\n.main-video-frame[_ngcontent-%COMP%]{\r\n    position: fixed;\r\n    right: 0;\r\n    bottom: 0;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    z-index: 3;\r\n}\r\n\r\n.gif-manager[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    z-index: 15;\r\n}\r\n\r\n.temp-video[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    z-index: 5;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxjQUFjO0lBQ2QsWUFBWTtJQUNaLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLFNBQVM7QUFDYjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQiwyQkFBMkI7SUFDM0IsV0FBVztJQUNYLFlBQVk7SUFDWixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsUUFBUTtJQUNSLFNBQVM7SUFDVCxlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLFVBQVU7QUFDZDs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsWUFBWTtJQUNaLFdBQVc7QUFDZjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsWUFBWTtJQUNaLFVBQVU7QUFDZCIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnN0YXJ0LWJ1dHRvbntcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgd2lkdGg6IDIwMHB4O1xyXG4gICAgaGVpZ2h0OiA5MHB4O1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiAzNSU7XHJcbiAgICBsZWZ0OiA0NSU7XHJcbn1cclxuXHJcbi5tYWluLWZyYW1le1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgLyogZGlzcGxheTogaW5saW5lLWJsb2NrOyAqL1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG59XHJcblxyXG4ubWFpbi12aWRlby1mcmFtZXtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHJpZ2h0OiAwO1xyXG4gICAgYm90dG9tOiAwO1xyXG4gICAgbWluLXdpZHRoOiAxMDAlO1xyXG4gICAgbWluLWhlaWdodDogMTAwJTtcclxuICAgIHotaW5kZXg6IDM7XHJcbn1cclxuXHJcbi5naWYtbWFuYWdlcntcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgei1pbmRleDogMTU7XHJcbn1cclxuXHJcbi50ZW1wLXZpZGVve1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICB6LWluZGV4OiA1O1xyXG59Il19 */"]
+      styles: [".start-button[_ngcontent-%COMP%]{\r\n    display: block;\r\n    width: 200px;\r\n    height: 90px;\r\n    position: absolute;\r\n    top: 35%;\r\n    left: 45%;\r\n}\r\n\r\n.main-frame[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    \r\n    background: black;\r\n    \r\n    box-sizing: border-box;\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n}\r\n\r\n.main-video-frame[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    box-sizing: border-box;\r\n    right: 0;\r\n    bottom: 0;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    z-index: 3;\r\n}\r\n\r\n.gif-manager[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    z-index: 15;\r\n}\r\n\r\n.temp-video[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    z-index: 5;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxjQUFjO0lBQ2QsWUFBWTtJQUNaLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLFNBQVM7QUFDYjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQiwyQkFBMkI7SUFDM0IsaUJBQWlCO0lBQ2pCLGlCQUFpQjtJQUNqQixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFlBQVk7SUFDWixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsc0JBQXNCO0lBQ3RCLFFBQVE7SUFDUixTQUFTO0lBQ1QsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixVQUFVO0FBQ2Q7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsV0FBVztJQUNYLFlBQVk7SUFDWixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsV0FBVztJQUNYLFlBQVk7SUFDWixVQUFVO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zdGFydC1idXR0b257XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHdpZHRoOiAyMDBweDtcclxuICAgIGhlaWdodDogOTBweDtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMzUlO1xyXG4gICAgbGVmdDogNDUlO1xyXG59XHJcblxyXG4ubWFpbi1mcmFtZXtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIC8qIGRpc3BsYXk6IGlubGluZS1ibG9jazsgKi9cclxuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xyXG4gICAgLyogbWFyZ2luOiA4cHg7ICovXHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG59XHJcblxyXG4ubWFpbi12aWRlby1mcmFtZXtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICByaWdodDogMDtcclxuICAgIGJvdHRvbTogMDtcclxuICAgIG1pbi13aWR0aDogMTAwJTtcclxuICAgIG1pbi1oZWlnaHQ6IDEwMCU7XHJcbiAgICB6LWluZGV4OiAzO1xyXG59XHJcblxyXG4uZ2lmLW1hbmFnZXJ7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIHotaW5kZXg6IDE1O1xyXG59XHJcblxyXG4udGVtcC12aWRlb3tcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgei1pbmRleDogNTtcclxufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -1328,15 +1328,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.ge = ge;
         this.currentTime = 0;
         this.endOfFirstLoopSec = 20;
+        this.myEvent = new Event('click', {
+          bubbles: true
+        });
 
         this.createFirstLoop = function () {
-          _this4.secondaryVideoElem = document.getElementById('secondary-loop'); // this.ge.secondaryVideoObj.src = this.ge.secondaryVideoObj.src + "&output=embed";
-          // window.location.replace(this.ge.secondaryVideoObj.src)
+          var btn = document.getElementById('test');
+          var box = btn.getBoundingClientRect(),
+              coordX = box.left + (box.right - box.left) / 2,
+              coordY = box.top + (box.bottom - box.top) / 2;
+          _this4.secondaryVideoElem = document.getElementById('secondary-loop'); // btn.addEventListener('click', e =>{
+          //   console.log(e)
+          // })
 
           if (_this4.secondaryVideoElem) {
             setTimeout(function () {
-              _this4.secondaryVideoElem.play();
-            }, 1000);
+              _this4.simulateMouseEvent(btn, "mousedown", coordX, coordY);
+
+              _this4.simulateMouseEvent(btn, "mouseup", coordX, coordY);
+
+              _this4.simulateMouseEvent(btn, "click", coordX, coordY); // btn.dispatchEvent(this.myEvent)
+              // document.getElementById('test').click()
+
+            }, 1200);
             _this4.ge.initialInterval = setInterval(function () {
               _this4.currentTime = Math.round(_this4.secondaryVideoElem.currentTime);
 
@@ -1345,6 +1359,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               }
             }, 1000);
           }
+        };
+
+        this.videoClicked = function (event) {
+          console.log(event);
+
+          _this4.secondaryVideoElem.play();
+        };
+
+        this.simulateMouseEvent = function (element, eventName, coordX, coordY) {
+          element.dispatchEvent(new MouseEvent(eventName, {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+            clientX: coordX,
+            clientY: coordY,
+            button: 0
+          }));
         };
       }
 
@@ -1365,14 +1396,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     SecondaryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: SecondaryComponent,
       selectors: [["app-secondary"]],
-      decls: 2,
+      decls: 3,
       vars: 1,
-      consts: [["id", "secondary-loop", "autoplay", "true", "muted", "", "preload", "auto", 1, "video-frame"], ["type", "video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\"", 3, "src"]],
+      consts: [["id", "secondary-loop", "muted", "", "autoplay", "", 1, "video-frame"], ["type", "video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\"", 3, "src"], ["id", "test", 3, "click"]],
       template: function SecondaryComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "video", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "source", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function SecondaryComponent_Template_button_click_2_listener($event) {
+            return ctx.videoClicked($event);
+          });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
@@ -1383,7 +1422,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx.ge.secondaryVideoObj.src, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
         }
       },
-      styles: [".video-frame[_ngcontent-%COMP%]{\r\n    position: fixed;\r\n    right: 0;\r\n    bottom: 0;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    z-index: 22;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zZWNvbmRhcnkvc2Vjb25kYXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsUUFBUTtJQUNSLFNBQVM7SUFDVCxlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvc2Vjb25kYXJ5L3NlY29uZGFyeS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnZpZGVvLWZyYW1le1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgcmlnaHQ6IDA7XHJcbiAgICBib3R0b206IDA7XHJcbiAgICBtaW4td2lkdGg6IDEwMCU7XHJcbiAgICBtaW4taGVpZ2h0OiAxMDAlO1xyXG4gICAgei1pbmRleDogMjI7XHJcbn0iXX0= */"]
+      styles: [".video-frame[_ngcontent-%COMP%]{\r\n    position: absolute;\r\n    background: black;\r\n    right: 0;\r\n    bottom: 0;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    z-index: 22;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zZWNvbmRhcnkvc2Vjb25kYXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLFFBQVE7SUFDUixTQUFTO0lBQ1QsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL3NlY29uZGFyeS9zZWNvbmRhcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi52aWRlby1mcmFtZXtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xyXG4gICAgcmlnaHQ6IDA7XHJcbiAgICBib3R0b206IDA7XHJcbiAgICBtaW4td2lkdGg6IDEwMCU7XHJcbiAgICBtaW4taGVpZ2h0OiAxMDAlO1xyXG4gICAgei1pbmRleDogMjI7XHJcbn0iXX0= */"]
     });
     /*@__PURE__*/
 

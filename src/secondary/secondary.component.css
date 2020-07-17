@@ -1,13 +1,9 @@
 .video-frame{
     position: absolute;
     background: black;
-    /* right: 0;
-    bottom: 0; */
-    /*min-width: 97%;
-    min-height: 97%;
-    max-width: 99%;
-    max-height: 99%; */
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
     z-index: 22;
 }

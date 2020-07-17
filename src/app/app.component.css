@@ -20,14 +20,11 @@
 
 .main-video-frame{
     position: absolute;
-    /* object-fit: fill;
     box-sizing: border-box;
     right: 0;
     bottom: 0;
-    min-width: 90%;
-    min-height: 90%; */
-    width: calc(100% - 5px);
-    height: calc(100% - 5px);
+    min-width: 100%;
+    min-height: 100%;
     z-index: 3;
 }
 
