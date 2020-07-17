@@ -99,14 +99,14 @@ class AppComponent {
                     this.ge.backgroundGifObj.isActive = true;
                     this.ge.fomGifObj.isActive = true;
                     this.ge.mainVideoObj.isActive = false;
-                    this.ge.secondaryVideoObj.src = './assets/second-loop.mp4';
+                    this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/second-loop.mp4';
                 }
                 if (Math.round(this.ge.mainVideoElem.currentTime) > 36 && Math.round(this.ge.mainVideoElem.currentTime) <= 38 && !this.firstVisited) {
                     this.firstVisited = true;
                     setTimeout(() => {
                         this.ge.mainVideoElem.pause();
                         this.ge.mainVideoObj.isActive = false;
-                        this.ge.secondaryVideoObj.src = './assets/third-loop.mp4';
+                        this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4';
                         setTimeout(() => {
                             this.ge.backgroundGifObj.isActive = true;
                             this.ge.homGifObj.isActive = true;
@@ -119,7 +119,7 @@ class AppComponent {
                     this.ge.backgroundGifObj.isActive = true;
                     this.ge.fomGifObj.isActive = true;
                     this.ge.mainVideoObj.isActive = false;
-                    this.ge.secondaryVideoObj.src = './assets/fourth-loop.mp4';
+                    this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fourth-loop.mp4';
                 }
                 if (Math.round(this.ge.mainVideoElem.currentTime) == 67 && (!this.ge.homGifObj.homework.includes('unchecked') || !this.ge.homGifObj.music.includes('unchecked')) && !this.secondVisited) {
                     this.ge.mainVideoElem.pause();
@@ -129,7 +129,7 @@ class AppComponent {
                         this.ge.backgroundGifObj.isActive = true;
                         this.ge.fomGifObj.isActive = true;
                         this.ge.mainVideoObj.isActive = false;
-                        this.ge.secondaryVideoObj.src = './assets/fourth-loop.mp4';
+                        this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fourth-loop.mp4';
                     }, 400);
                 }
                 if (Math.round(this.ge.mainVideoElem.currentTime) >= 85 && Math.round(this.ge.mainVideoElem.currentTime) <= 86 && !this.thirdVisited) {
@@ -138,7 +138,7 @@ class AppComponent {
                     this.ge.backgroundGifObj.isActive = true;
                     this.ge.homGifObj.isActive = true;
                     this.ge.mainVideoObj.isActive = false;
-                    this.ge.secondaryVideoObj.src = './assets/third-loop.mp4';
+                    this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4';
                 }
                 if (Math.round(this.ge.mainVideoElem.currentTime) >= 85 && Math.round(this.ge.mainVideoElem.currentTime) <= 86 && (!this.ge.homGifObj.music.includes('unchecked') && !this.ge.homGifObj.homework.includes('unchecked'))) {
                     this.ge.mainVideoElem.currentTime = 107;
@@ -150,7 +150,7 @@ class AppComponent {
                     this.ge.backgroundGifObj.isActive = true;
                     this.ge.homGifObj.isActive = true;
                     this.ge.mainVideoObj.isActive = false;
-                    this.ge.secondaryVideoObj.src = './assets/third-loop.mp4';
+                    this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4';
                 }
                 if ((Math.round(this.ge.mainVideoElem.currentTime) >= 104 && Math.round(this.ge.mainVideoElem.currentTime) < 106)
                     && (!this.ge.homGifObj.music.includes('unchecked') && !this.ge.homGifObj.homework.includes('unchecked'))) {
@@ -168,7 +168,7 @@ class AppComponent {
                     this.ge.backgroundGifObj.isActive = true;
                     this.ge.lofGifObj.isActive = true;
                     this.ge.mainVideoObj.isActive = false;
-                    this.ge.secondaryVideoObj.src = './assets/fifth-loop.mp4';
+                    this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fifth-loop.mp4';
                 }
                 if (Math.round(this.ge.mainVideoElem.currentTime) == 183) {
                     this.ge.fomGifObj.mother = './assets/mother_checked.gif';
@@ -178,7 +178,7 @@ class AppComponent {
                     this.ge.backgroundGifObj.isActive = true;
                     this.ge.fomGifObj.isActive = true;
                     this.ge.mainVideoObj.isActive = false;
-                    this.ge.secondaryVideoObj.src = './assets/sixth-loop.mp4';
+                    this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/sixth-loop.mp4';
                 }
                 if (Math.round(this.ge.mainVideoElem.currentTime) == 196) {
                     this.ge.mainVideoElem.currentTime = 197;
@@ -308,8 +308,8 @@ __webpack_require__.r(__webpack_exports__);
 class GlobalElementsService {
     constructor(sanitizer) {
         this.sanitizer = sanitizer;
-        this.mainVideoObj = { src: "./assets/no_slides.mp4", isActive: false, currentTime: 7 };
-        this.secondaryVideoObj = { src: "./assets/first-loop.mp4", isActive: true, currentTime: 0 };
+        this.mainVideoObj = { src: "https://mymp4videos.s3.eu-central-1.amazonaws.com/no_slides.mp4", isActive: false, currentTime: 7 };
+        this.secondaryVideoObj = { src: "https://mymp4videos.s3.eu-central-1.amazonaws.com/first-loop.mp4", isActive: true, currentTime: 0 };
         this.enterGif = './assets/enter_unchecked.gif';
         this.fomGifObj = { father: './assets/father_unchecked.gif', mother: './assets/mother_unchecked.gif', question: './assets/parent_side.gif', isActive: false, fomCounter: 0 };
         this.homGifObj = { homework: './assets/homework_unchecked.gif', music: './assets/music_unchecked.gif', question: './assets/pick_diversion.gif', isActive: false };

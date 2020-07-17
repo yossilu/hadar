@@ -49,7 +49,7 @@ export class AppComponent {
         this.ge.fomGifObj.isActive = true;
 
         this.ge.mainVideoObj.isActive = false;
-        this.ge.secondaryVideoObj.src = './assets/second-loop.mp4'
+        this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/second-loop.mp4'
       }
 
 
@@ -59,7 +59,7 @@ export class AppComponent {
           this.ge.mainVideoElem.pause();
           
             this.ge.mainVideoObj.isActive = false;
-            this.ge.secondaryVideoObj.src = './assets/third-loop.mp4';
+            this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4';
 
             setTimeout(() => {
                 this.ge.backgroundGifObj.isActive = true;
@@ -80,7 +80,7 @@ export class AppComponent {
         this.ge.fomGifObj.isActive = true;
         
         this.ge.mainVideoObj.isActive = false;
-        this.ge.secondaryVideoObj.src = './assets/fourth-loop.mp4'
+        this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fourth-loop.mp4'
       }
 
 
@@ -92,7 +92,7 @@ export class AppComponent {
           this.ge.backgroundGifObj.isActive = true;
           this.ge.fomGifObj.isActive = true;
           this.ge.mainVideoObj.isActive = false;
-          this.ge.secondaryVideoObj.src = './assets/fourth-loop.mp4'
+          this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fourth-loop.mp4'
         }, 400);
         
         
@@ -107,7 +107,7 @@ export class AppComponent {
         this.ge.homGifObj.isActive = true;
 
         this.ge.mainVideoObj.isActive = false;
-        this.ge.secondaryVideoObj.src = './assets/third-loop.mp4'
+        this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4'
       }
 
       if(Math.round(this.ge.mainVideoElem.currentTime) >= 85 && Math.round(this.ge.mainVideoElem.currentTime) <= 86 && (!this.ge.homGifObj.music.includes('unchecked') && !this.ge.homGifObj.homework.includes('unchecked'))){
@@ -121,7 +121,7 @@ export class AppComponent {
         this.ge.backgroundGifObj.isActive = true;
         this.ge.homGifObj.isActive = true;
         this.ge.mainVideoObj.isActive = false;
-        this.ge.secondaryVideoObj.src = './assets/third-loop.mp4'
+        this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4'
       }
 
       if((Math.round(this.ge.mainVideoElem.currentTime) >= 104 && Math.round(this.ge.mainVideoElem.currentTime) < 106 ) 
@@ -145,7 +145,7 @@ export class AppComponent {
         this.ge.lofGifObj.isActive = true;
 
         this.ge.mainVideoObj.isActive = false;
-        this.ge.secondaryVideoObj.src = './assets/fifth-loop.mp4'
+        this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fifth-loop.mp4'
       }
 
       if(Math.round(this.ge.mainVideoElem.currentTime) == 183){
@@ -158,7 +158,7 @@ export class AppComponent {
         this.ge.fomGifObj.isActive = true;
 
         this.ge.mainVideoObj.isActive = false;
-        this.ge.secondaryVideoObj.src = './assets/sixth-loop.mp4'
+        this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/sixth-loop.mp4'
       }
 
       if(Math.round(this.ge.mainVideoElem.currentTime) == 196){

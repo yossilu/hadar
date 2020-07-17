@@ -11,8 +11,8 @@ export class GlobalElementsService {
   mainVideoElem;
   secondaryVideoElem;
   mainVidInterval;
-  mainVideoObj = {src: "./assets/no_slides.mp4", isActive: false, currentTime: 7};
-  secondaryVideoObj = {src: "./assets/first-loop.mp4", isActive: true, currentTime: 0};
+  mainVideoObj = {src: "https://mymp4videos.s3.eu-central-1.amazonaws.com/no_slides.mp4", isActive: false, currentTime: 7};
+  secondaryVideoObj = {src: "https://mymp4videos.s3.eu-central-1.amazonaws.com/first-loop.mp4", isActive: true, currentTime: 0};
   initialInterval;
   enterGif = './assets/enter_unchecked.gif'
  

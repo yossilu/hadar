@@ -188,7 +188,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.fomGifObj.isActive = true;
               _this.ge.mainVideoObj.isActive = false;
-              _this.ge.secondaryVideoObj.src = './assets/second-loop.mp4';
+              _this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/second-loop.mp4';
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) > 36 && Math.round(_this.ge.mainVideoElem.currentTime) <= 38 && !_this.firstVisited) {
@@ -197,7 +197,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 _this.ge.mainVideoElem.pause();
 
                 _this.ge.mainVideoObj.isActive = false;
-                _this.ge.secondaryVideoObj.src = './assets/third-loop.mp4';
+                _this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4';
                 setTimeout(function () {
                   _this.ge.backgroundGifObj.isActive = true;
                   _this.ge.homGifObj.isActive = true;
@@ -213,7 +213,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.fomGifObj.isActive = true;
               _this.ge.mainVideoObj.isActive = false;
-              _this.ge.secondaryVideoObj.src = './assets/fourth-loop.mp4';
+              _this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fourth-loop.mp4';
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) == 67 && (!_this.ge.homGifObj.homework.includes('unchecked') || !_this.ge.homGifObj.music.includes('unchecked')) && !_this.secondVisited) {
@@ -225,7 +225,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 _this.ge.backgroundGifObj.isActive = true;
                 _this.ge.fomGifObj.isActive = true;
                 _this.ge.mainVideoObj.isActive = false;
-                _this.ge.secondaryVideoObj.src = './assets/fourth-loop.mp4';
+                _this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fourth-loop.mp4';
               }, 400);
             }
 
@@ -237,7 +237,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.homGifObj.isActive = true;
               _this.ge.mainVideoObj.isActive = false;
-              _this.ge.secondaryVideoObj.src = './assets/third-loop.mp4';
+              _this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4';
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) >= 85 && Math.round(_this.ge.mainVideoElem.currentTime) <= 86 && !_this.ge.homGifObj.music.includes('unchecked') && !_this.ge.homGifObj.homework.includes('unchecked')) {
@@ -252,7 +252,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.homGifObj.isActive = true;
               _this.ge.mainVideoObj.isActive = false;
-              _this.ge.secondaryVideoObj.src = './assets/third-loop.mp4';
+              _this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/third-loop.mp4';
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) >= 104 && Math.round(_this.ge.mainVideoElem.currentTime) < 106 && !_this.ge.homGifObj.music.includes('unchecked') && !_this.ge.homGifObj.homework.includes('unchecked')) {
@@ -274,7 +274,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.lofGifObj.isActive = true;
               _this.ge.mainVideoObj.isActive = false;
-              _this.ge.secondaryVideoObj.src = './assets/fifth-loop.mp4';
+              _this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/fifth-loop.mp4';
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) == 183) {
@@ -287,7 +287,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this.ge.backgroundGifObj.isActive = true;
               _this.ge.fomGifObj.isActive = true;
               _this.ge.mainVideoObj.isActive = false;
-              _this.ge.secondaryVideoObj.src = './assets/sixth-loop.mp4';
+              _this.ge.secondaryVideoObj.src = 'https://mymp4videos.s3.eu-central-1.amazonaws.com/sixth-loop.mp4';
             }
 
             if (Math.round(_this.ge.mainVideoElem.currentTime) == 196) {
@@ -529,12 +529,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       this.sanitizer = sanitizer;
       this.mainVideoObj = {
-        src: "./assets/no_slides.mp4",
+        src: "https://mymp4videos.s3.eu-central-1.amazonaws.com/no_slides.mp4",
         isActive: false,
         currentTime: 7
       };
       this.secondaryVideoObj = {
-        src: "./assets/first-loop.mp4",
+        src: "https://mymp4videos.s3.eu-central-1.amazonaws.com/first-loop.mp4",
         isActive: true,
         currentTime: 0
       };
