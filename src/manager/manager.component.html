@@ -5,7 +5,7 @@
    <img id="mother" class="fom-gif left-gif" [src]="ge.fomGifObj.mother" *ngIf="ge.fomGifObj.isActive" (click)="fomClicked('mother')"/> 
    <img class="fom-gif question-gif" [src]='ge.fomGifObj.question'  *ngIf="ge.fomGifObj.isActive && !ge.myselfGifObj.isActive"/> 
    <img class="fom-gif myself-gif myself" [src]="ge.myselfGifObj.src" *ngIf="ge.myselfGifObj.isActive" (click)="myselfClicked()"/>
-   <img class="fom-gif myself-gif myself-question-gif" src="../assets/pick_side_last.gif" *ngIf="ge.myselfGifObj.isActive"/>
+   <img class="fom-gif myself-gif myself-question-gif" src="./assets/pick_side_last.gif" *ngIf="ge.myselfGifObj.isActive"/>
    
    <img class="fom-gif left-gif homework" [src]="ge.homGifObj.homework" *ngIf="ge.homGifObj.isActive" (click)="homClicked('homework')"/> 
    <img class="fom-gif right-gif music" [src]="ge.homGifObj.music" *ngIf="ge.homGifObj.isActive" (click)="homClicked('music')"/> 
